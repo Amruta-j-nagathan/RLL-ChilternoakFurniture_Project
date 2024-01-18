@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="178.973">
+    <testcase classname="Test Chilternoak Furniture page I want to use this template for my feature file" name="Testing of ContactUs Page" time="49.058">
+        <system-out><![CDATA[Given I am on Chilternoak Furniture Homepage................................passed
+When I click on ContactUs link..............................................passed
+Then I will be on ContactUs Page and Capture the title of the page..........passed
+And I entered name as 'User' on the page....................................passed
+And I entered email id as 'user@gmail.com' on the page......................passed
+And I entered phone no as '1234567891' on the page..........................passed
+And I entered message as 'Hi, This is good product' on the page.............passed
+Then I click on send button.................................................passed
+Then It shoulld diplayed the message 'robot'................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Chilternoak Furniture page I want to use this template for my feature file" name="Testing of ContactUs Page 2" time="31.376">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given I am on Chilternoak Furniture Homepage................................passed
+When I click on ContactUs link..............................................passed
+Then I will be on ContactUs Page and Capture the title of the page..........passed
+And I entered name as 'User' on the page....................................passed
+And I entered email id as '' on the page....................................passed
+And I entered phone no as '1243567891' on the page..........................passed
+And I entered message as 'Hi, This is good product' on the page.............passed
+Then I click on send button.................................................passed
+Then It shoulld diplayed the message 'Please enter the valid email'.........failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at steps.ContactUsFormSteps.it_shoulld_diplayed_the_message(ContactUsFormSteps.java:118)
+	at ✽.It shoulld diplayed the message 'Please enter the valid email'(file:///C:/Users/DELL/eclipse-workspace/CucumberProject/RLLProjectCucumber/src/test/java/features/ContactUs.feature:15)
+]]></failure>
+    </testcase>
+    <testcase classname="Test Chilternoak Furniture page I want to use this template for my feature file" name="Testing of ContactUs Page 3" time="31.505">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given I am on Chilternoak Furniture Homepage................................passed
+When I click on ContactUs link..............................................passed
+Then I will be on ContactUs Page and Capture the title of the page..........passed
+And I entered name as '' on the page........................................passed
+And I entered email id as '' on the page....................................passed
+And I entered phone no as '' on the page....................................passed
+And I entered message as '' on the page.....................................passed
+Then I click on send button.................................................passed
+Then It shoulld diplayed the message 'It is mandontary to fill the fields'..failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at steps.ContactUsFormSteps.it_shoulld_diplayed_the_message(ContactUsFormSteps.java:118)
+	at ✽.It shoulld diplayed the message 'It is mandontary to fill the fields'(file:///C:/Users/DELL/eclipse-workspace/CucumberProject/RLLProjectCucumber/src/test/java/features/ContactUs.feature:15)
+]]></failure>
+    </testcase>
+    <testcase classname="Test Chilternoak Furniture page I want to use this template for my feature file" name="Testing of ContactUs Page 4" time="31.44">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given I am on Chilternoak Furniture Homepage................................passed
+When I click on ContactUs link..............................................passed
+Then I will be on ContactUs Page and Capture the title of the page..........passed
+And I entered name as '####' on the page....................................passed
+And I entered email id as 'user@gmail.com' on the page......................passed
+And I entered phone no as '1243567891' on the page..........................passed
+And I entered message as 'Hi, This is good product' on the page.............passed
+Then I click on send button.................................................passed
+Then It shoulld diplayed the message 'Please enter the valid name'..........failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at steps.ContactUsFormSteps.it_shoulld_diplayed_the_message(ContactUsFormSteps.java:118)
+	at ✽.It shoulld diplayed the message 'Please enter the valid name'(file:///C:/Users/DELL/eclipse-workspace/CucumberProject/RLLProjectCucumber/src/test/java/features/ContactUs.feature:15)
+]]></failure>
+    </testcase>
+    <testcase classname="Test Chilternoak Furniture page I want to use this template for my feature file" name="Testing of ContactUs Page 5" time="35.058">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given I am on Chilternoak Furniture Homepage................................passed
+When I click on ContactUs link..............................................passed
+Then I will be on ContactUs Page and Capture the title of the page..........passed
+And I entered name as 'User' on the page....................................passed
+And I entered email id as 'user@gmail.com' on the page......................passed
+And I entered phone no as '##########' on the page..........................passed
+And I entered message as 'Hi, This is good product' on the page.............passed
+Then I click on send button.................................................passed
+Then It shoulld diplayed the message 'Please Enter the valid number format'.failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at steps.ContactUsFormSteps.it_shoulld_diplayed_the_message(ContactUsFormSteps.java:118)
+	at ✽.It shoulld diplayed the message 'Please Enter the valid number format'(file:///C:/Users/DELL/eclipse-workspace/CucumberProject/RLLProjectCucumber/src/test/java/features/ContactUs.feature:15)
+]]></failure>
+    </testcase>
+</testsuite>
